@@ -3,6 +3,7 @@ upgrade
 
 # 各種インストール
 install rbenv ruby-build
+install macvim --override-system-vim
 
 # homebrew-caskのインストール
 tap phinze/homebrew-cask || true
@@ -16,5 +17,4 @@ cask install dropbox
 cask install virtualbox
 cask install vagrant
 cask install kobito
-cask install sublime-text
 cask install sourcetree

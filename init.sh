@@ -1,19 +1,17 @@
 #!/bin/sh
 
-if [ $UID != 0 ]; then
-  echo "Please run with sudo"
-  exit 1
-fi
+# ricky
+cp -f /usr/local/Cellar/ricty/3.2.2/share/fonts/Ricty*.ttf ~/Library/Fonts/
+fc-cache -vf
 
-# homebrewインストール
-ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
-
-# brewを使ってもろもろインストール
-brew bundle
+# nodebrewのインストール
+curl -L git.io/nodebrew | perl - setup
 
 # pipをインストール
-easy_install pip
+sudo easy_install pip
 
-# AWS CLI
-pip install awscli
+# AWS CLIをインストール
+sudo pip install awscli
 
+# git guiコマンドをSourceTreeで代用
+git config --global alias.gui '!open -a SourceTree .'

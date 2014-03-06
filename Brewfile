@@ -27,6 +27,8 @@ install reattach-to-user-namespace
 install mysql
 # macの通知センターで通知してもらうコマンド
 install terminal-notifier
+# macのゴミ箱に移動するコマンド
+install rmtrash
 # ruby
 install rbenv ruby-build
 

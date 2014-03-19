@@ -47,13 +47,13 @@ cask install kobito
 cask install sourcetree
 cask install google-drive
 cask install mysqlworkbench
+cask install android-file-transfer
 
 # alfred
 # デフォルトではCaskroomを見てくれないが、
 # cask alfred link で検索対象に加える事ができる
-# ...が、このコマンドはうまく動かないので、
-# alfred起動して手動で/opt/homebrew-cask/caskroomを追加する
 cask install alfred
+cask alfred link
 
 # IntelliJ IDEA
 # JDK 7で動かすには下記ファイルを書き換える必要がある

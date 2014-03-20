@@ -31,6 +31,8 @@ install terminal-notifier
 install rmtrash
 # ruby
 install rbenv ruby-build
+# The Silver Searcher
+install ag
 
 # homebrew-caskのインストール
 tap phinze/homebrew-cask || true

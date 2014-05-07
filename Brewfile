@@ -35,7 +35,7 @@ install rbenv ruby-build
 install ag
 
 # homebrew-caskのインストール
-tap phinze/homebrew-cask || true
+tap caskroom/cask || true
 install brew-cask
 
 # dmg配布のアプリをインストール
